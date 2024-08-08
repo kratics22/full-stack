@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        funtionhandleSubmit(event){
+            event.preventDefault();
+            const formData = new formData(event.target);
+            const Data = object.frontEntries(formData);
+            console.log(Data);
+        }
+    </script>
 </head>
 
 <body>
